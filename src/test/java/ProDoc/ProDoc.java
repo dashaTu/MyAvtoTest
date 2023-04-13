@@ -29,7 +29,8 @@ public class ProDoc {
         SearchboxElement.click();
         Thread.sleep(2000);
 
-        WebElement inputElement = driver.findElement(By.className("text-field__input"));
+//        WebElement inputElement = driver.findElement(By.className("text-field__input"));
+        WebElement inputElement = driver.findElement(By.xpath("//input[@placeholder = 'Врачи, клиники, услуги']"));
         Thread.sleep(2000);
         inputElement.sendKeys("Ницакова Марина Петровна");
         WebElement submitButton = driver.findElement(By.className("base-search__button"));
