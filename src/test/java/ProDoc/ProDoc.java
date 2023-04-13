@@ -23,9 +23,8 @@ public class ProDoc {
         urlElement.click();
         WebElement inputElementSearch = driver.findElement(By.className("b-choose-town-popup__search-input"));
         inputElementSearch.sendKeys("Краснодар");
-
-        WebElement SearchboxElement = driver.findElement(By.className("tt-dataset"));
         Thread.sleep(2000);
+        WebElement SearchboxElement = driver.findElement(By.className("tt-dataset"));
         SearchboxElement.click();
         Thread.sleep(2000);
 
